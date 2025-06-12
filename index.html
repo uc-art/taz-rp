@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>RP TAZ - דף הבית</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      font-family: Arial, sans-serif;
+      background: #0a0a1a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #111133;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px #4a4aff;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #8a8aff;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #4a4aff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #4a4aff;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      background: #2a2aff;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px 0;
+      gap: 20px;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    /* צד שמאל - ספר שיאים ושאלות נפוצות */
+    .left-column {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex-shrink: 0;
+      margin-left: 0;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    /* מרכז - חדשות ועדכונים */
+    .news-box {
+      flex: 1;
+      background: #1c1c3a;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 12px #4a4aff;
+      font-size: 0.95em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .news-item {
+      background: #2a2a4a;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .news-item h3 {
+      margin: 0 0 6px;
+      color: #ffd500;
+      font-size: 1.1em;
+    }
+
+    .news-item p {
+      margin: 0;
+      color: #cccfff;
+      font-size: 0.9em;
+      line-height: 1.4em;
+    }
+
+    /* צד ימין - טריילר */
+    .trailer-box {
+      width: 360px;
+      background: #1c1c3a;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 12px #4a4aff;
+      font-size: 0.95em;
+      flex-shrink: 0;
+      margin-right: 0;
+      padding-right: 10px;
+    }
+
+    .trailer-box iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    #highscores, #faq {
+      background: #1c1c3a;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 0 12px #4a4aff;
+      font-size: 0.95em;
+    }
+
+    h2 {
+      color: #ffd500;
+      text-align: center;
+      font-size: 1.4em;
+      margin-bottom: 12px;
+    }
+
+    #faq .faq-item {
+      background: #2a2a4a;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    #faq .faq-answer {
+      display: none;
+      margin-top: 6px;
+      color: #cccfff;
+      font-size: 0.9em;
+      line-height: 1.4em;
+    }
+
+    #highscores ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.95em;
+    }
+
+    #highscores li {
+      margin: 8px 0;
+      line-height: 1.5em;
+    }
+
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+      }
+
+      .trailer-box, .left-column, .news-box {
+        width: 90% !important;
+        margin: 0 auto 20px auto !important;
+        padding: 15px !important;
+      }
+
+      .left-column {
+        margin-top: 0 !important;
+      }
+
+      .trailer-box iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RP TAZ</h1>
+  <nav>
+    <a href="index.html">דף הבית</a>
+    <a href="shop.html">חנות</a>
+    <a href="https://discord.gg/Q2vmPYhs" target="_blank">דיסקורד</a>
+  </nav>
+</header>
+
+<div class="content">
+  <!-- צד שמאל: ספר שיאים ושאלות נפוצות -->
+  <div class="left-column">
+    <section id="highscores">
+      <h2>🏆 ספר שיאים</h2>
+      <ul>
+        <li>uriyaten9 - הכי פעיל</li>
+        <li>_qyt - הכי הרבה קילים</li>
+        <li>swiss - הכי הרבה כסף</li>
+        <li>taz - הישגים מיוחדים</li>
+        <li>elad - שחקן מבטיח</li>
+        <li>noam - התמדה מרשימה</li>
+        <li>daniel - תורם לקהילה</li>
+        <li>ron - הכי הרבה זמן במשחק</li>
+        <li>avi - שיא בנייה יצירתית</li>
+        <li>shir - הכי הרבה חברים</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>❓ שאלות נפוצות</h2>
+      <div class="faq-item" onclick="toggle(this)">
+        איך נכנסים לשרת?
+        <div class="faq-answer">גרסת Java עם IP של השרת.</div>
+      </div>
+      <div class="faq-item" onclick="toggle(this)">
+        איך מצטרפים לדיסקורד?
+        <div class="faq-answer">דרך כפתור הדיסקורד באתר.</div>
+      </div>
+      <div class="faq-item" onclick="toggle(this)">
+        האם יש כללים?
+        <div class="faq-answer">אין קללות, כבוד לזולת, שמירה על פייר-פליי.</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- מרכז: חדשות ועדכונים -->
+  <div class="news-box">
+    <h2>🗞 חדשות ועדכונים</h2>
+    <div class="news-item">
+      <h3>הגרלה על סוויטה בבית מלון</h3>
+      <p>הצטרפו להגרלה בדיסקורד על הסוויטה המפנקת ביותר במלון!</p>
+    </div>
+    <div class="news-item">
+      <h3>עדכון חדש</h3>
+      <p>הוספנו מפה חדשה למשחק ותיקנו באגים קטנים. הצטרפו לראות את השינויים!</p>
+    </div>
+    <div class="news-item">
+      <h3>תחרות בנייה</h3>
+      <p>מי יבנה את המבצר הכי מרשים? תחרות הבנייה מתחילה בשבוע הבא, הצטרפו לדיסקורד לפרטים!</p>
+    </div>
+  </div>
+
+  <!-- צד ימין: טריילר -->
+  <div class="trailer-box">
+    <h2>🎬 טריילר מהשרת</h2>
+    <iframe src="https://www.youtube.com/embed/0Hnld0nm4JE" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function toggle(el) {
+    const answer = el.querySelector(".faq-answer");
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>

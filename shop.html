@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>RP TAZ - חנות</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #111133;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px #4a4aff;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #8a8aff;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #4a4aff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #4a4aff;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      background: #2a2aff;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .rank-box {
+      width: 300px;
+      background: linear-gradient(to bottom, #ffcc00, #ff9900);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: #fff;
+    }
+
+    .rank-image {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .rank-image.haha {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/021/826/379/non_2x/haha-laughing-speech-bubble-sound-effect-icon-cute-black-text-lettering-illustration-vector.jpg');
+    }
+
+    .rank-image.og {
+      background-image: url('https://res.cloudinary.com/teepublic/image/private/s--dlFIKTP8--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:35/co_000000,e_outline:inner_fill:35/co_ffffff,e_outline:35/co_ffffff,e_outline:inner_fill:35/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1542367057/production/designs/3514489_0.jpg');
+    }
+
+    .rank-image.discord {
+      background-image: url('https://assets.mofoprod.net/network/images/discord.original.jpg');
+    }
+
+    .rank-image.good {
+      background-image: url('https://thumbs.dreamstime.com/b/golden-good-word-isolated-white-background-d-illustration-333561740.jpg');
+    }
+
+    .rank-title {
+      background: #000;
+      padding: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .rank-benefits {
+      padding: 15px;
+      text-align: right;
+    }
+
+    .rank-benefits ul {
+      list-style: none;
+      padding: 0;
+      text-align: right;
+    }
+
+    .rank-benefits li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+    }
+
+    .rank-benefits li::before {
+      content: "✔";
+      color: #00ff00;
+      margin-left: 8px;
+    }
+
+    .rank-price {
+      background: #000;
+      padding: 10px;
+      font-size: 1.1em;
+      color: #ffcc00;
+    }
+
+    .rank-price del {
+      color: #ccc;
+      margin-right: 10px;
+    }
+
+    .rank-action {
+      padding: 15px;
+    }
+
+    .rank-action button {
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .rank-action button:hover {
+      background: #ddd;
+    }
+
+    @media (max-width: 900px) {
+      .rank-box {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RP TAZ - חנות</h1>
+  <nav>
+    <a href="index.html">דף הבית</a>
+    <a href="shop.html">חנות</a>
+    <a href="https://discord.gg/Q2vmPYhs" target="_blank">דיסקורד</a>
+  </nav>
+</header>
+
+<div class="content">
+  <div class="rank-box">
+    <div class="rank-image haha"></div>
+    <div class="rank-title">haha</div>
+    <div class="rank-benefits">
+      <ul>
+        <li>גישה לצ'אט מיוחד</li>
+        <li>תג מצחיק במשחק</li>
+        <li>בונוס ניסיון קטן</li>
+      </ul>
+    </div>
+    <div class="rank-price">₪3 <del>₪5</del></div>
+    <div class="rank-action">
+      <button>קנה עכשיו</button>
+    </div>
+  </div>
+
+  <div class="rank-box">
+    <div class="rank-image og"></div>
+    <div class="rank-title">og</div>
+    <div class="rank-benefits">
+      <ul>
+        <li>גישה למפה בלעדית</li>
+        <li>תלבושת ייחודית</li>
+        <li>תג OG במשחק</li>
+      </ul>
+    </div>
+    <div class="rank-price">₪7 <del>₪10</del></div>
+    <div class="rank-action">
+      <button>קנה עכשיו</button>
+    </div>
+  </div>
+
+  <div class="rank-box">
+    <div class="rank-image discord"></div>
+    <div class="rank-title">discord</div>
+    <div class="rank-benefits">
+      <ul>
+        <li>תפקיד מיוחד בדיסקורד</li>
+        <li>גישה לערוצים סגורים</li>
+        <li>הודעות צבעוניות</li>
+      </ul>
+    </div>
+    <div class="rank-price">₪3 <del>₪5</del></div>
+    <div class="rank-action">
+      <button>קנה עכשיו</button>
+    </div>
+  </div>
+
+  <div class="rank-box">
+    <div class="rank-image good"></div>
+    <div class="rank-title">good</div>
+    <div class="rank-benefits">
+      <ul>
+        <li>תג "Good" במשחק</li>
+        <li>בונוס ניסיון כפול</li>
+        <li>גישה מוקדמת לאירועים</li>
+      </ul>
+    </div>
+    <div class="rank-price">₪2 <del>₪4</del></div>
+    <div class="rank-action">
+      <button>קנה עכשיו</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
